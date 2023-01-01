@@ -35,6 +35,34 @@ marco = Character.create(name: "Marco Inaros", description: "A commander of Free
 filip = Character.create(name: "Filip Inaros", description: "A teenage member of the OPA, and later Free Navy, and son of Marco Inaros and Naomi Nagata.", location: "The Outer Planets")
 drummer = Character.create(name: "Camina Drummer", description: "Chief of security of Tycho Station, later president of the Transport Union.", location: "The Outer Planets")
 
+#Mars
+draper = Character.create(name: "Roberta \"Bobbie\" W. Draper", description: "Martian gunnery sergeant in the MCRN, of the 2nd Marine Expeditionary Force.", location: "Mars")
+fayez = Character.create(name: "Fayez Okoye-Sarkis", description: "A Geologist from Mars who worked on new colony worlds and later married Elvi Okoye.", location: "Mars")
+emil = Character.create(name: "Emil Sauveterre", description: "The captain of the MCRN Barkeith.", location: "Mars")
+epstein = Character.create(name: "Solomon Epstein", description: "Inventor of the \"Epstein-Fusion Drive\". He died testing his machine when he went into deep space with no way to get back.", location: "Mars")
+kit = Character.create(name: "Kit Kamal", description: "Son of Alex Kamal from his second marriage. He leaves Mars with his wife and son to the Nieuwestad system.", location: "Mars")
+
+#Earth
+havelock = Character.create(name: "Dmitri Havelock", description: "A security contractor from Earth and former partner of Joe Miller.", location: "Earth")
+avasarala = Character.create(name: "Chrisjen Avasarala", description: "The UN Assistant Undersecretary of Executive Administration, later UN Secretary General.", location: "Earth")
+clarissa_mao = Character.create(name: "Clarissa \"Claire\" Melpomene Mao", description: "A daughter of Jules-Pierre Mao, magnate of Mao-Kwikowski Mercantile from Luna; as Melba she is a licensed electrochemical technician. After forming a bond with her, Amos gives her the nickname Peaches.", location: "Earth")
+okoye = Character.create(name: "Dr. Elvi Okoye", description: "A biologist from Earth, now a leading figure among citizens of the new colonies.", location: "Earth")
+anna = Character.create(name: "Rev. Dr. Annushka \"Anna\" Volovodove", description: "A Methodist pastor at St. John's United on Europa and Earth", location: "Earth")
+nono = Character.create(name: "Namono \"Nono\" Volovodov", description: "wife of Anna, with whom she has a daughter, \"Nami\".", location: "Earth")
+
+# Laconia
+winston_duarte = Character.create(name: "Winston Duarte", description: "High Consul of the Laconian Empire, a defector from the Martian navy.", location: "Laconia")
+teresa_duarte = Character.create(name: "Teresa Duarte", description: "A.K.A. Tiny, the daughter and heir of the High Consul.", location: "Laconia")
+cortazar = Character.create(name: "Paolo Cortázar", description: "A former member of Protogen's nanoinformatics research division, he is now the lead researcher on Laconia.", location: "Laconia")
+singh = Character.create(name: "Santiago Jilie Singh", description: "A captain in the Laconian Imperial Navy and commander of the Gathering Storm.", location: "Laconia")
+trejo = Character.create(name: "Anton Trejo", description: "High Admiral of the Laconian Imperial Navy and captain of the Heart of the Tempest.", location: "Laconia")
+tanaka = Character.create(name: "Aliana Tanaka", description: "A Colonel in the Laconian Imperial Navy and a former officer in the MCRN until defecting.", location: "Laconia")
+bisset = Character.create(name: "Cara Bisset", description: "A ten-year-old child who, with her parents, settled on Laconia and was resurrected by the planet's repair drones.", location: "Laconia")
+
+#Other systems
+houston = Character.create(name: "Jillian Houston", description: "A member of the Underground and crew member of the Gathering Storm, she is from the Freehold system.", location: "Other Systems")
+ekko = Character.create(name: "Ekko Levy", description: "The captain of the Forgiveness from the planet Firdaws.", location: "Other Systems")
+imvic = Character.create(name: "Marrel Imvic", description: "A Linguist onboard the Musafir from the Dobridomov system.", location: "Other Systems")
 
 
 #join_table
