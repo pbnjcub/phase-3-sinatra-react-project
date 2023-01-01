@@ -21,7 +21,24 @@ nagata = Character.create(name: "Naomi Nagata", description: "Chief engineer and
 amos = Character.create(name: "Amos Burton", description: "Mechanic and general muscle; an Earther.", location: "Crew of the Rocinante")
 kamal = Character.create(name: "Alex Kamal", description: "Pilot of the Rocinante, former Mars Congressional Republic Navy (MCRN) pilot; a Martian.", location: "Crew of the Rocinante")
 
+#The Outer Planets
+miller = Character.create(name: "Josephus Aloisus Miller", description: "A Belter who worked as a detective for the Ceres station security firm, Star Helix Security.", location: "The Outer Planets")
+julie_mao = Character.create(name: "Julie Andromeda Mao", description: "The oldest child of Earther plutocrat Jules-Pierre Mao, former pinnace racer and Outer Planets Alliance convert.", location: "The Outer Planets")
+fred_johnson = Character.create(name: "Fred Lucius Johnson", description: "A former UN marine reviled as the \"Butcher of Anderson Station\" and now the leader of the OPA.", location: "The Outer Planets")
+prax = Character.create(name: "Dr. Praxidike \"Prax\" Meng", description: "The chief botanist of the RMD-Southern soy farm project on Ganymede and father of Mei Meng.", location: "The Outer Planets")
+mei = Character.create(name: "Mei Meng", description: "Daughter of Prax.", location: "The Outer Planets")
+debaca = Character.create(name: "Carlos \"Bull\" de Baca", description: "A member of the OPA serving as chief security officer aboard the Behemoth.", location: "The Outer Planets")
+michio = Character.create(name: "Michio Pa", description: "Executive officer of the OPA ship Behemoth, later captain of the Free Navy ship Connaught.", location: "The Outer Planets")
+merton = Character.create(name: "Basia \"Baz\" Merton", description: "A welder from Ganymede, later citizen of Ilus.", location: "The Outer Planets")
+maneo = Character.create(name: "Manéo \"Néo\" Jung-Espinoza", description: "A young Belter from Ceres.", location: "The Outer Planets")
+marco = Character.create(name: "Marco Inaros", description: "A commander of Free Navy, a radical OPA branch.", location: "The Outer Planets")
+filip = Character.create(name: "Filip Inaros", description: "A teenage member of the OPA, and later Free Navy, and son of Marco Inaros and Naomi Nagata.", location: "The Outer Planets")
+drummer = Character.create(name: "Camina Drummer", description: "Chief of security of Tycho Station, later president of the Transport Union.", location: "The Outer Planets")
+
+
+
 #join_table
+#Crew of the Rocinante
 Bookcharacter.create(character_id: holden.id, book_id: book_one.id)
 Bookcharacter.create(character_id: holden.id, book_id: book_two.id)
 Bookcharacter.create(character_id: holden.id, book_id: book_three.id)
@@ -62,6 +79,7 @@ Bookcharacter.create(character_id: kamal.id, book_id: book_seven.id)
 Bookcharacter.create(character_id: kamal.id, book_id: book_eight.id)
 Bookcharacter.create(character_id: kamal.id, book_id: book_nine.id)
 
+#Outer Planets
 
 
 puts "✅ Done seeding!"
