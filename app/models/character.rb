@@ -1,5 +1,4 @@
 class Character < ActiveRecord::Base
-    belongs_to :book
-
-    serialize :book_id, Array
+    has_many :bookcharacters
+    has_many :books, through: :bookcharacters
 end

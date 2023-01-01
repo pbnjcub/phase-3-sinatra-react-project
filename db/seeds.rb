@@ -1,4 +1,8 @@
 puts "🌱 Seeding spices..."
+Character.delete_all
+Book.delete_all
+
+
 
 #books
 book_one = Book.create(title: "Leviathan Wakes", year_published: 2011, book_num: 1, num_pages: 561, isbn: "978-0-316-12908-4", description: "Jim Holden is XO of an ice miner making runs from the rings of Saturn to the mining stations of the Belt. When he and his crew stumble upon a derelict ship, the Scopuli, they find themselves in possession of a secret they never wanted. A secret that someone is willing to kill for—and kill on a scale unfathomable to Jim and his crew. War is brewing in the system unless he can find out who left the ship and why. Detective Miller is looking for a girl. One girl in a system of billions, but her parents have money and money talks. When the trail leads him to the Scopuli and rebel sympathizer Holden, he realizes that this girl may be the key to everything. Holden and Miller must thread the needle between the Earth government, the Outer Planet revolutionaries, and secretive corporations—and the odds are against them. But out in the Belt, the rules are different, and one small ship can change the fate of the universe.")
@@ -12,12 +16,51 @@ book_eight = Book.create(title: "Tiamat's Wrath", year_published: 2019, book_num
 book_nine = Book.create(title: "Leviathan Falls", year_published: 2021, book_num: 9, num_pages: 528, isbn: "978-0-316-33291-0", description: "The Laconian Empire has fallen, setting the 1,300 solar systems free from the rule of Winston Duarte. But the ancient enemy that killed the gate builders is awake, and the war against our universe has begun again. In the dead system of Adro, Elvi Okoye leads a desperate scientific mission to understand what the gate builders were and what destroyed them, even if it means compromising herself and the half-alien children who bear the weight of her investigation. Through the wide-flung systems of humanity, Colonel Aliana Tanaka hunts for Duarte’s missing daughter...and the shattered emperor himself. And on the Rocinante, James Holden and his crew struggle to build a future for humanity out of the shards and ruins of all that has come before. As nearly unimaginable forces prepare to annihilate all human life, Holden and a group of unlikely allies discover a last, desperate chance to unite all of humanity, with the promise of a vast galactic civilization free from wars, factions, lies, and secrets if they win. But the price of victory may be worse than the cost of defeat.")
 
 #characters
-holden = Character.create(name: 'James "Jim" R. Holden', description: "The captain of the Rocinante, former UN Navy (UNN) officer; from Earth (an Earther).", book_id: [1,2,3,4,5,6,7,8,9], location: "Crew of the Rocinante")
-nagata = Character.create(name: "Naomi Nagata", description: "Chief engineer and executive officer; a Belter.", book_id: [1,2,3,4,5,6,7,8,9], location: "Crew of the Rocinante")
-amos = Character.create(name: "Amos Burton", description: "Mechanic and general muscle; an Earther.", book_id: [1,2,3,4,5,6,7,8,9], location: "Crew of the Rocinante")
-kamal = Character.create(name: "Alex Kamal", description: "Pilot of the Rocinante, former Mars Congressional Republic Navy (MCRN) pilot; a Martian.", book_id: [1,2,3,4,5,6,7,8,9], location: "Crew of the Rocinante")
+holden = Character.create(name: 'James "Jim" R. Holden', description: "The captain of the Rocinante, former UN Navy (UNN) officer; from Earth (an Earther).", location: "Crew of the Rocinante")
+nagata = Character.create(name: "Naomi Nagata", description: "Chief engineer and executive officer; a Belter.", location: "Crew of the Rocinante")
+amos = Character.create(name: "Amos Burton", description: "Mechanic and general muscle; an Earther.", location: "Crew of the Rocinante")
+kamal = Character.create(name: "Alex Kamal", description: "Pilot of the Rocinante, former Mars Congressional Republic Navy (MCRN) pilot; a Martian.", location: "Crew of the Rocinante")
 
+#join_table
+Bookcharacter.create(character_id: holden.id, book_id: book_one.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_two.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_three.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_four.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_five.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_six.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_seven.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_eight.id)
+Bookcharacter.create(character_id: holden.id, book_id: book_nine.id)
 
+Bookcharacter.create(character_id: nagata.id, book_id: book_one.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_two.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_three.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_four.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_five.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_six.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_seven.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_eight.id)
+Bookcharacter.create(character_id: nagata.id, book_id: book_nine.id)
+
+Bookcharacter.create(character_id: amos.id, book_id: book_one.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_two.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_three.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_four.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_five.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_six.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_seven.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_eight.id)
+Bookcharacter.create(character_id: amos.id, book_id: book_nine.id)
+
+Bookcharacter.create(character_id: kamal.id, book_id: book_one.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_two.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_three.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_four.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_five.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_six.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_seven.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_eight.id)
+Bookcharacter.create(character_id: kamal.id, book_id: book_nine.id)
 
 
 
