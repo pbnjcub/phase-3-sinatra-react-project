@@ -41,6 +41,9 @@ group :development do
   # Automatically reload when there are changes
   # https://github.com/alexch/rerun
   gem "rerun"
+  gem 'shotgun'
+  gem 'json'
+  gem "rack-contrib", "~> 2.3"
 end
 
 # These gems will only be used when we are running tests
