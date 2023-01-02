@@ -43,7 +43,6 @@ group :development do
   gem "rerun"
   gem 'shotgun'
   gem 'json'
-  gem "rack-contrib", "~> 2.3"
 end
 
 # These gems will only be used when we are running tests
