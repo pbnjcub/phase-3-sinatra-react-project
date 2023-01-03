@@ -8,6 +8,11 @@ class BooksController < ApplicationController
         character_to_json
     end
 
+    get "/characters/:character_id/books" do
+        find_character
+        @character.books.to_json
+    end
+
     post "/books" do
         @book = Book.new(params)
         if @book.save
@@ -38,7 +43,7 @@ class BooksController < ApplicationController
         end
     end
 
-    Private
+    private
         def find_book
             @book = Book.find_by_id(params["id"])
         end
@@ -49,5 +54,9 @@ class BooksController < ApplicationController
 
         def character_error_messages
             { errors: @book.errors.full_messages }.to_json
+        end
+
+        def find_character
+            @character = Character.find_by_id(params["character_id"])
         end
 end

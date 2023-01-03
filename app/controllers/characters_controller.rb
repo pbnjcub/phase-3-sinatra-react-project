@@ -8,10 +8,10 @@ class CharactersController < ApplicationController
         character_to_json
     end
 
-    # get "/characters/:location" do
-    #     # binding.pry
-    #     Character.where("location = params[:location]").to_json
-    # end
+    get "/books/:book_id/characters" do
+        find_book
+        @book.characters.to_json
+    end
 
 
     post "/characters" do
@@ -44,7 +44,7 @@ class CharactersController < ApplicationController
         end
     end
 
-    Private
+    private
         def find_character
             @character = Character.find_by_id(params["id"])
         end
@@ -57,5 +57,7 @@ class CharactersController < ApplicationController
             { errors: @character.errors.full_messages }.to_json
         end
 
-
+        def find_book
+            @book = Book.find_by_id(params["book_id"])
+        end
 end
