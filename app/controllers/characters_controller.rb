@@ -1,6 +1,6 @@
 class CharactersController < ApplicationController
     get "/characters" do
-        Character.all.to_json(include: [books: {only: [:id, :title]}], except: [:created_at, :updated_at])
+        Character.all.to_json(include: [:books], except: [:created_at, :updated_at])
     end
 
     get "/characters/:id" do
@@ -13,7 +13,6 @@ class CharactersController < ApplicationController
         @book.characters.to_json
     end
 
-
     post "/characters" do
         @character = Character.new(params)
         if @character.save
@@ -24,6 +23,18 @@ class CharactersController < ApplicationController
             character_error_messages
         end
     end
+
+    # post "/books/:book_id/characters" do
+    #     find_book
+    #     @character = @book.characters.new(params)
+    #     if @character.save
+    #         #return object as json if saved
+    #         character_to_json
+    #     else
+    #         #return error messages if not saved
+    #         character_error_messages
+    #     end
+    # end
 
     patch "/characters/:id" do
         find_character
