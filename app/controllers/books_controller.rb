@@ -4,6 +4,9 @@ class BooksController < ApplicationController
     end
 
     get "/books/:id" do
+        # def find_book
+        #     @book = Book.find_by_id(params["id"])
+        # end
         find_book
         book_to_json
     end
